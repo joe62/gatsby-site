@@ -65,7 +65,16 @@ git push -u origin main
 **push an existing repository from the command line**
 
 ```
+// 首次
 git remote add origin https://github.com/joe62/gatsby-site.git
 git branch -M main
 git push -u origin main
+```
+
+**提交更新**
+
+```
+git add .
+git commit -m "[说明内容]"
+git push
 ```
