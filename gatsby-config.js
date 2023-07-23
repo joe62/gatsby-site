@@ -3,10 +3,17 @@
  */
 module.exports = {
   siteMetadata: {
-    titile: `Gatsby Sites`,
+    title: `Gatsby Sites`,
   },
   plugins: [
     "gatsby-plugin-image",
-    "gatsby-plugin-sharp"
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: 'blog',
+        path: `${__dirname}/blog`
+      }
+    }
   ],
 }
